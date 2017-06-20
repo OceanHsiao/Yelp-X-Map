@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85051E8C1EF8DBBF003F4892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85051E8B1EF8DBBF003F4892 /* AppDelegate.swift */; };
+		85051E8E1EF8DBBF003F4892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85051E8D1EF8DBBF003F4892 /* ViewController.swift */; };
+		85051E911EF8DBBF003F4892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85051E8F1EF8DBBF003F4892 /* Main.storyboard */; };
+		85051E941EF8DBBF003F4892 /* YelpFoodieDiary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85051E921EF8DBBF003F4892 /* YelpFoodieDiary.xcdatamodeld */; };
+		85051E961EF8DBBF003F4892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85051E951EF8DBBF003F4892 /* Assets.xcassets */; };
+		85051E991EF8DBBF003F4892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85051E971EF8DBBF003F4892 /* LaunchScreen.storyboard */; };
+		85051EA41EF8DBC1003F4892 /* YelpFoodieDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85051EA31EF8DBC1003F4892 /* YelpFoodieDiaryTests.swift */; };
+		85051EAF1EF8DBC1003F4892 /* YelpFoodieDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85051EAE1EF8DBC1003F4892 /* YelpFoodieDiaryUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85051EA01EF8DBC1003F4892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85051E801EF8DBBE003F4892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85051E871EF8DBBE003F4892;
+			remoteInfo = YelpFoodieDiary;
+		};
+		85051EAB1EF8DBC1003F4892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85051E801EF8DBBE003F4892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85051E871EF8DBBE003F4892;
+			remoteInfo = YelpFoodieDiary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85051E881EF8DBBE003F4892 /* YelpFoodieDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpFoodieDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85051E8B1EF8DBBF003F4892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85051E8D1EF8DBBF003F4892 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85051E901EF8DBBF003F4892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85051E931EF8DBBF003F4892 /* YelpFoodieDiary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YelpFoodieDiary.xcdatamodel; sourceTree = "<group>"; };
+		85051E951EF8DBBF003F4892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85051E981EF8DBBF003F4892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85051E9A1EF8DBBF003F4892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85051E9F1EF8DBC1003F4892 /* YelpFoodieDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpFoodieDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85051EA31EF8DBC1003F4892 /* YelpFoodieDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpFoodieDiaryTests.swift; sourceTree = "<group>"; };
+		85051EA51EF8DBC1003F4892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85051EAA1EF8DBC1003F4892 /* YelpFoodieDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpFoodieDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85051EAE1EF8DBC1003F4892 /* YelpFoodieDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpFoodieDiaryUITests.swift; sourceTree = "<group>"; };
+		85051EB01EF8DBC1003F4892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85051E851EF8DBBE003F4892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85051E9C1EF8DBC1003F4892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85051EA71EF8DBC1003F4892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85051E7F1EF8DBBE003F4892 = {
+			isa = PBXGroup;
+			children = (
+				85051E8A1EF8DBBE003F4892 /* YelpFoodieDiary */,
+				85051EA21EF8DBC1003F4892 /* YelpFoodieDiaryTests */,
+				85051EAD1EF8DBC1003F4892 /* YelpFoodieDiaryUITests */,
+				85051E891EF8DBBE003F4892 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85051E891EF8DBBE003F4892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85051E881EF8DBBE003F4892 /* YelpFoodieDiary.app */,
+				85051E9F1EF8DBC1003F4892 /* YelpFoodieDiaryTests.xctest */,
+				85051EAA1EF8DBC1003F4892 /* YelpFoodieDiaryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85051E8A1EF8DBBE003F4892 /* YelpFoodieDiary */ = {
+			isa = PBXGroup;
+			children = (
+				85051E8B1EF8DBBF003F4892 /* AppDelegate.swift */,
+				85051E8D1EF8DBBF003F4892 /* ViewController.swift */,
+				85051E8F1EF8DBBF003F4892 /* Main.storyboard */,
+				85051E951EF8DBBF003F4892 /* Assets.xcassets */,
+				85051E971EF8DBBF003F4892 /* LaunchScreen.storyboard */,
+				85051E9A1EF8DBBF003F4892 /* Info.plist */,
+				85051E921EF8DBBF003F4892 /* YelpFoodieDiary.xcdatamodeld */,
+			);
+			path = YelpFoodieDiary;
+			sourceTree = "<group>";
+		};
+		85051EA21EF8DBC1003F4892 /* YelpFoodieDiaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				85051EA31EF8DBC1003F4892 /* YelpFoodieDiaryTests.swift */,
+				85051EA51EF8DBC1003F4892 /* Info.plist */,
+			);
+			path = YelpFoodieDiaryTests;
+			sourceTree = "<group>";
+		};
+		85051EAD1EF8DBC1003F4892 /* YelpFoodieDiaryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				85051EAE1EF8DBC1003F4892 /* YelpFoodieDiaryUITests.swift */,
+				85051EB01EF8DBC1003F4892 /* Info.plist */,
+			);
+			path = YelpFoodieDiaryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85051E871EF8DBBE003F4892 /* YelpFoodieDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85051EB31EF8DBC1003F4892 /* Build configuration list for PBXNativeTarget "YelpFoodieDiary" */;
+			buildPhases = (
+				85051E841EF8DBBE003F4892 /* Sources */,
+				85051E851EF8DBBE003F4892 /* Frameworks */,
+				85051E861EF8DBBE003F4892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YelpFoodieDiary;
+			productName = YelpFoodieDiary;
+			productReference = 85051E881EF8DBBE003F4892 /* YelpFoodieDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85051E9E1EF8DBC1003F4892 /* YelpFoodieDiaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85051EB61EF8DBC1003F4892 /* Build configuration list for PBXNativeTarget "YelpFoodieDiaryTests" */;
+			buildPhases = (
+				85051E9B1EF8DBC1003F4892 /* Sources */,
+				85051E9C1EF8DBC1003F4892 /* Frameworks */,
+				85051E9D1EF8DBC1003F4892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85051EA11EF8DBC1003F4892 /* PBXTargetDependency */,
+			);
+			name = YelpFoodieDiaryTests;
+			productName = YelpFoodieDiaryTests;
+			productReference = 85051E9F1EF8DBC1003F4892 /* YelpFoodieDiaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85051EA91EF8DBC1003F4892 /* YelpFoodieDiaryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85051EB91EF8DBC1003F4892 /* Build configuration list for PBXNativeTarget "YelpFoodieDiaryUITests" */;
+			buildPhases = (
+				85051EA61EF8DBC1003F4892 /* Sources */,
+				85051EA71EF8DBC1003F4892 /* Frameworks */,
+				85051EA81EF8DBC1003F4892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85051EAC1EF8DBC1003F4892 /* PBXTargetDependency */,
+			);
+			name = YelpFoodieDiaryUITests;
+			productName = YelpFoodieDiaryUITests;
+			productReference = 85051EAA1EF8DBC1003F4892 /* YelpFoodieDiaryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85051E801EF8DBBE003F4892 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Owen-Hsiao-iOS.com";
+				TargetAttributes = {
+					85051E871EF8DBBE003F4892 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2PQ72FJ8L9;
+						ProvisioningStyle = Automatic;
+					};
+					85051E9E1EF8DBC1003F4892 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2PQ72FJ8L9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 85051E871EF8DBBE003F4892;
+					};
+					85051EA91EF8DBC1003F4892 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2PQ72FJ8L9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 85051E871EF8DBBE003F4892;
+					};
+				};
+			};
+			buildConfigurationList = 85051E831EF8DBBE003F4892 /* Build configuration list for PBXProject "YelpFoodieDiary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85051E7F1EF8DBBE003F4892;
+			productRefGroup = 85051E891EF8DBBE003F4892 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85051E871EF8DBBE003F4892 /* YelpFoodieDiary */,
+				85051E9E1EF8DBC1003F4892 /* YelpFoodieDiaryTests */,
+				85051EA91EF8DBC1003F4892 /* YelpFoodieDiaryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85051E861EF8DBBE003F4892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85051E991EF8DBBF003F4892 /* LaunchScreen.storyboard in Resources */,
+				85051E961EF8DBBF003F4892 /* Assets.xcassets in Resources */,
+				85051E911EF8DBBF003F4892 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85051E9D1EF8DBC1003F4892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85051EA81EF8DBC1003F4892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85051E841EF8DBBE003F4892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85051E941EF8DBBF003F4892 /* YelpFoodieDiary.xcdatamodeld in Sources */,
+				85051E8E1EF8DBBF003F4892 /* ViewController.swift in Sources */,
+				85051E8C1EF8DBBF003F4892 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85051E9B1EF8DBC1003F4892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85051EA41EF8DBC1003F4892 /* YelpFoodieDiaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85051EA61EF8DBC1003F4892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85051EAF1EF8DBC1003F4892 /* YelpFoodieDiaryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85051EA11EF8DBC1003F4892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85051E871EF8DBBE003F4892 /* YelpFoodieDiary */;
+			targetProxy = 85051EA01EF8DBC1003F4892 /* PBXContainerItemProxy */;
+		};
+		85051EAC1EF8DBC1003F4892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85051E871EF8DBBE003F4892 /* YelpFoodieDiary */;
+			targetProxy = 85051EAB1EF8DBC1003F4892 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85051E8F1EF8DBBF003F4892 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85051E901EF8DBBF003F4892 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85051E971EF8DBBF003F4892 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85051E981EF8DBBF003F4892 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85051EB11EF8DBC1003F4892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85051EB21EF8DBC1003F4892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85051EB41EF8DBC1003F4892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2PQ72FJ8L9;
+				INFOPLIST_FILE = YelpFoodieDiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.owenhsiao.ca.YelpFoodieDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		85051EB51EF8DBC1003F4892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2PQ72FJ8L9;
+				INFOPLIST_FILE = YelpFoodieDiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.owenhsiao.ca.YelpFoodieDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		85051EB71EF8DBC1003F4892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2PQ72FJ8L9;
+				INFOPLIST_FILE = YelpFoodieDiaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.owenhsiao.ca.YelpFoodieDiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YelpFoodieDiary.app/YelpFoodieDiary";
+			};
+			name = Debug;
+		};
+		85051EB81EF8DBC1003F4892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2PQ72FJ8L9;
+				INFOPLIST_FILE = YelpFoodieDiaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.owenhsiao.ca.YelpFoodieDiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YelpFoodieDiary.app/YelpFoodieDiary";
+			};
+			name = Release;
+		};
+		85051EBA1EF8DBC1003F4892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2PQ72FJ8L9;
+				INFOPLIST_FILE = YelpFoodieDiaryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.owenhsiao.ca.YelpFoodieDiaryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = YelpFoodieDiary;
+			};
+			name = Debug;
+		};
+		85051EBB1EF8DBC1003F4892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2PQ72FJ8L9;
+				INFOPLIST_FILE = YelpFoodieDiaryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.owenhsiao.ca.YelpFoodieDiaryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = YelpFoodieDiary;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85051E831EF8DBBE003F4892 /* Build configuration list for PBXProject "YelpFoodieDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85051EB11EF8DBC1003F4892 /* Debug */,
+				85051EB21EF8DBC1003F4892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85051EB31EF8DBC1003F4892 /* Build configuration list for PBXNativeTarget "YelpFoodieDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85051EB41EF8DBC1003F4892 /* Debug */,
+				85051EB51EF8DBC1003F4892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85051EB61EF8DBC1003F4892 /* Build configuration list for PBXNativeTarget "YelpFoodieDiaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85051EB71EF8DBC1003F4892 /* Debug */,
+				85051EB81EF8DBC1003F4892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85051EB91EF8DBC1003F4892 /* Build configuration list for PBXNativeTarget "YelpFoodieDiaryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85051EBA1EF8DBC1003F4892 /* Debug */,
+				85051EBB1EF8DBC1003F4892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		85051E921EF8DBBF003F4892 /* YelpFoodieDiary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				85051E931EF8DBBF003F4892 /* YelpFoodieDiary.xcdatamodel */,
+			);
+			currentVersion = 85051E931EF8DBBF003F4892 /* YelpFoodieDiary.xcdatamodel */;
+			path = YelpFoodieDiary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 85051E801EF8DBBE003F4892 /* Project object */;
+}
