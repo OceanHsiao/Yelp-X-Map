@@ -54,6 +54,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   var _isShowDistanceAndDuration = true
   var _travelMode = "Driving"
   var _isDirectFromCurrentLocation = false
+  var _recordLastTimeChosenMarkerIndex = -1 //This is for checking if user tap the same marker continuously
   //For Yelp Filter Searching
   weak var _sharedYelpClient: YLPClient?
   var _searchedLimit: UInt = 20
@@ -484,6 +485,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
    func fadeInOnce() is used for _travellingInfoView show up as fade-in.
    ***/
   func fadeInOnce(WithView view: UIView) {
+    view.layer.removeAllAnimations()
     view.alpha = 0
     UIView.animate(withDuration: 1.0, delay: 0.0,
                    options: UIViewAnimationOptions.curveEaseIn, animations: {
@@ -499,6 +501,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     guard finished != true else {
       return
     }
+    /*** [7/6/2017] Fix bug - unexpected app crash
+     Before do new animation, Must Clear all animations in view.layer.
+     Since view's animation might do many times before view finishes the last animation,
+     in this situation, too many animations excute in the same time would cause app crash.
+     ***/
+    view.layer.removeAllAnimations()
+
     UIView.animate(withDuration: 1.0, delay: 0.5,
                    options: UIViewAnimationOptions.curveEaseIn,
                    animations: { view.alpha = 1.0 } ,
@@ -511,6 +520,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     guard finished != true else {
       return
     }
+    /*** [7/6/2017] Fix bug - unexpected app crash
+     Before do new animation, Must Clear all animations in view.layer.
+     Since view's animation might do many times before view finishes the last animation,
+     in this situation, too many animations excute in the same time would cause app crash.
+     ***/
+    view.layer.removeAllAnimations()
+
     UIView.animate(withDuration: 1.0, delay: 1.5,
                    options: UIViewAnimationOptions.curveEaseOut,
                    animations: { view.alpha = 0 } ,
@@ -650,11 +666,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
 
     /***
      To avoid a bug:
-     Sometimes override func mapView(_ mapView:, idleAt position:) seems to have never called.
-     In this situation, when user has not moved map or tap another marker, 
-     then keeps tapping the same marker, the _markerInfoView would not be shown.
+     Sometimes override func mapView(_ mapView:, idleAt position:) seems to have not called 
+     after user already moved map.
+     In this situation, when user does the next step:
+     taps another marker without move map,then keeps tapping the same marker,
+     the _markerInfoView would not be shown.
+     [7/6/2017] 
+     Just check if _isMarkerTapped == true && _isCameraMoving == false is not enough.
+     if don't check if _recordLastTimeChosenMarkerIndex != _choseMarkerIndex, 
+     the _markerInfoView would show twice as blink effect in the situation:
+     User moves map, then tap a marker.
      ***/
-    if _isMarkerTapped == true && _isCameraMoving == false {
+    if _isMarkerTapped == true && _isCameraMoving == false
+      && _recordLastTimeChosenMarkerIndex != _choseMarkerIndex {
       _markerInfoView.isHidden = false
       _travellingInfoView.isHidden = false
     }
@@ -904,7 +928,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   final func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
     if _isMarkerTapped == true {
       _isCameraMoving = true;
-      _gmsPolyline?.map?.isHidden = true
+      /*** [7/6/2017] - fix bug: everytime tap a marker -> map blinks while it's moving
+       Can't set _gmsPolyline?.map hide, because _gmsPolyline?.map is _googleMapView
+       ***/
+      //_gmsPolyline?.map?.isHidden = true
     } else {
       _gmsPolyline?.map = nil
       _choseMarkerIndex = -1
@@ -983,6 +1010,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     // make this marker our currently tapped marker
     _currentlyTappedMarker = marker;
     _choseMarkerIndex = Int(marker.snippet!)! //marker.snippet records the index of _searchedBusinesses array
+    
+    if _recordLastTimeChosenMarkerIndex != _choseMarkerIndex {
+      _recordLastTimeChosenMarkerIndex = _choseMarkerIndex
+    }
     
     /* Animate the camera to center on the currently tapped marker, which causes
      mapView:didChangeCameraPosition: to be called */
